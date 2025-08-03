@@ -1,4 +1,4 @@
-##Essa biblioteca é um projeto de integração automática da ponte H L298N, sensores infravermelho como TCRT5000 e sensor ultrassônico HC-SR04, além de uma extensão para guardar valores maiores com EEPROM
+## Essa biblioteca é um projeto de integração automática da ponte H L298N, sensores infravermelho como TCRT5000 e sensor ultrassônico HC-SR04, além de uma extensão para guardar valores maiores com EEPROM
 
 # Instalação
 * Primeiramente, baixe o arquivo .zip do github
@@ -6,10 +6,10 @@
 * Em seguida, coloque a pasta extraída no diretório "libraries"
 * Enfim, no topo do seu código, copie essa linha `#include <arduino_forRobots.h>`
 
-#Introdução
+# Introdução
 A biblioteca possui três módulos, um é o chamado L298NM, que controla a ponte H, seus métodos são descritos abaixo. O segundo é chamado de autocalibralib e controla múltiplos sensores estilo TCRT5000. O último é simplesmente "ultrassom", que faz o esperado, opera HC-SR04. Todos os métodos são descritos abaixo.
 
-#L298BNM
+# L298BNM
 
 ## Construtor
 Cria uma instância como um objeto no C++ da ponte L298N com os pinos, pedindo o IN1, IN2, IN3 e IN4.
