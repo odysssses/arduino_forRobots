@@ -9,7 +9,7 @@
 # Introdução
 A biblioteca possui três módulos, um é o chamado L298NM, que controla a ponte H, seus métodos são descritos abaixo. O segundo é chamado de autocalibralib e controla múltiplos sensores estilo TCRT5000. O último é simplesmente "ultrassom", que faz o esperado, opera HC-SR04. Todos os métodos são descritos abaixo.
 
-# L298BNM
+# L298NM
 
 ## Construtor
 Cria uma instância como um objeto no C++ da ponte L298N com os pinos, pedindo o IN1, IN2, IN3 e IN4.
@@ -42,7 +42,7 @@ Faz o robô parar
 
 `[nome].stop`
  
-#autocalibralib
+# autocalibralib
 
 ## Construtor
 Define um sensor e um LED (opcional), para calibração e inicia os pinos.
@@ -87,9 +87,7 @@ Utiliza do valor armazenado na placa para deduzir a cor da linha
 
 Assume um valor limiar e o usa para deduzir a cor da linha
 
-#ultrassom
-
-# FUNÇÕES 
+# ultrassom
 
 ## Construtor
 Define uma instância de sensor ultrassom como objeto, pedindo apenas os pinos trig e echo do sensor
@@ -110,15 +108,15 @@ Retorna se há ou não um obstáculo à frente do sensor, baseando-se na margem 
 ## EXEMPLO
 Testa todas as funções da biblioteca definindo um sensor com os pinos padrão 3 e 5 (podem ser alterados no código). Mostra no console a distância em centímetros e se há ou não um obstáculo perto 
 
-#EEPROM2byte
+# EEPROM2byte
 
-##rode EEPROM2byte [nome] no início do código para inicializar o serviço
+## rode EEPROM2byte [nome] no início do código para inicializar o serviço
 
-##writeEEPROM
+## writeEEPROM
 Toma como argumento primeiramente o endereço na memória do EEPROM a ser utilizado (também usa o próximo, por exemplo, se for dado 1, usará também o 2, então tente espaçar seus endereços por um, de 2 em 2) e secundariamente o valor a ser armazenado, que é no máximo ~65000
 
 `[nome].writeEEPROM([endereço], [valor])`
-##readEEPROM
+## readEEPROM
 Toma como argumento um só endereço, que é o que foi dado no writeEEPROM, mas lê dois (esse e o próximo).
 
 `[nome].readEEPROM([endereço])`
